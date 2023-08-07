@@ -1,1 +1,3 @@
-console.log('hi there');
+import { homePage } from "./homepage";
+
+homePage();
