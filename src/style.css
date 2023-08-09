@@ -75,18 +75,29 @@ iframe {
 
 .contact-grid {
   display: grid;
-  grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
+  grid-template: 1fr / 1fr;
   align-items: center;
 }
 
 .map {
-  grid-row: 1/5;
   grid-column: 2;
 }
 
 #content {
   width: 100vw;
   height: 100vh;
+}
+
+.icon-container-grid {
+  display: grid;
+  grid-template: repeat(4, 1fr) / 1fr 6fr;
+  align-items: center;
+  justify-items: center;
+  row-gap: 1rem;
+}
+
+.icon-container-grid>p {
+  text-align: left;
 }
 
 @media (max-width: 400px) {
