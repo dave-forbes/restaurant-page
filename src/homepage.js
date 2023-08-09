@@ -1,5 +1,6 @@
 export function homePage() {
   const main = document.querySelector('main');
+  main.classList.remove('contact-grid');
   main.innerHTML = '';
   const h4 = document.createElement('h4');
   const p = document.createElement('p');
@@ -9,6 +10,4 @@ export function homePage() {
 
   main.appendChild(h4);
   main.appendChild(p);
-
-  content.appendChild(main);
 }

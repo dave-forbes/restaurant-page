@@ -73,10 +73,38 @@ iframe {
   height: min(90vw, 450px);
 }
 
+.contact-grid {
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
+  align-items: center;
+}
+
+.map {
+  grid-row: 1/5;
+  grid-column: 2;
+}
+
+#content {
+  width: 100vw;
+  height: 100vh;
+}
+
 @media (max-width: 400px) {
   main {
     margin: 0 auto;
     padding: 1rem 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .contact-grid {
+    grid-template: none;
+    gap: 1rem;
+  }
+
+  .map {
+    grid-column: 1;
+    grid-row: 1;
   }
 }
 
